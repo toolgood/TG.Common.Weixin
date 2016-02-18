@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39492360-C8C3-4BA4-BE7E-76AECB13BC0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TG.Common.Weixin</RootNamespace>
+    <AssemblyName>TG.Common.Weixin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codes\Config.cs" />
+    <Compile Include="Codes\DownloadFileInfo.cs" />
+    <Compile Include="Codes\JsonResult.cs" />
+    <Compile Include="Codes\WebApi.cs" />
+    <Compile Include="Codes\WebClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datas\WxMsg.cs" />
+    <Compile Include="Datas\WxReplyMsg.cs" />
+    <Compile Include="Mp\MpApi.cs" />
+    <Compile Include="Mp\多客服功能\CustomerServiceManageJson\CustomInfoJson.cs" />
+    <Compile Include="Mp\多客服功能\CustomerServiceManageJson\CustomOnlineJson.cs" />
+    <Compile Include="Mp\多客服功能\CustomerServiceManageJson\GetRecordResult.cs" />
+    <Compile Include="Mp\多客服功能\CustomerServiceManageJson\RecordJson.cs" />
+    <Compile Include="Mp\多客服功能\CustomServiceAPI.cs" />
+    <Compile Include="Mp\多客服功能\SessionControlJson\GetSessionListResultJson.cs" />
+    <Compile Include="Mp\多客服功能\SessionControlJson\GetSessionStateResultJson.cs" />
+    <Compile Include="Mp\多客服功能\SessionControlJson\GetWaitCaseResultJson.cs" />
+    <Compile Include="Mp\帐号管理\Datas\CreateQrCodeResult.cs" />
+    <Compile Include="Mp\帐号管理\QrCodeAPI.cs" />
+    <Compile Include="Mp\微信JS-SDK\JsApi.cs" />
+    <Compile Include="Mp\微信卡券接口\CardAPI.cs" />
+    <Compile Include="Mp\微信卡券接口\CardCreate\CardCreateData.cs" />
+    <Compile Include="Mp\微信卡券接口\CardCreate\CardCreateInfo.cs" />
+    <Compile Include="Mp\微信卡券接口\CardCreate\CardCreateInfo_Card.cs" />
+    <Compile Include="Mp\微信卡券接口\CardCreate\CardCreateResultJson.cs" />
+    <Compile Include="Mp\微信卡券接口\CardManage\ActivateUserFormSetData.cs" />
+    <Compile Include="Mp\微信卡券接口\CardManage\BaseCardDetails.cs" />
+    <Compile Include="Mp\微信卡券接口\CardManage\BaseCardUpdateInfo.cs" />
+    <Compile Include="Mp\微信卡券接口\CardManage\CardManageResultJson.cs" />
+    <Compile Include="Mp\微信卡券接口\CardManage\CardUpdateData.cs" />
+    <Compile Include="Mp\微信卡券接口\Code\CodeResultJson.cs" />
+    <Compile Include="Mp\微信卡券接口\Common\Card_BaseInfo\Card_BaseInfoBase.cs" />
+    <Compile Include="Mp\微信卡券接口\Common\Card_BaseInfo\Card_BaseInfo_DataInfo.cs" />
+    <Compile Include="Mp\微信卡券接口\Common\Card_BaseInfo\Card_BaseInfo_Sku.cs" />
+    <Compile Include="Mp\微信卡券接口\Shelf\ShelfCreateData.cs" />
+    <Compile Include="Mp\微信卡券接口\Shelf\ShelfResultJson.cs" />
+    <Compile Include="Mp\微信卡券接口\Store\StoreLocationData.cs" />
+    <Compile Include="Mp\微信卡券接口\Store\StoreResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundApi.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\DeviceManageResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\GetAuditStatusResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\GetShakeInfoResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\PageManageResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\RegisterData.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\StatisticsResultJson.cs" />
+    <Compile Include="Mp\摇一摇周边\ShakeAroundJson\UploadImageResultJson.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisAPI.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\AnalysisResultJson.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\ArticleAnalysisItemJson.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\BaseAnalysisObject.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\BaseAnalysisResult.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\InterfaceAnalysisItemJson.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\MessageAnalysisItemJson.cs" />
+    <Compile Include="Mp\数据统计接口\AnalysisResultJson\UserAnalysisItemJson.cs" />
+    <Compile Include="Mp\用户管理\GroupsAPI.cs" />
+    <Compile Include="Mp\用户管理\GroupsJson\CreateGroupResult.cs" />
+    <Compile Include="Mp\用户管理\GroupsJson\GetIdResult.cs" />
+    <Compile Include="Mp\用户管理\GroupsJson\GroupsJson.cs" />
+    <Compile Include="Mp\用户管理\UserAPI.cs" />
+    <Compile Include="Mp\用户管理\UserJson\BatchGetUserInfoData.cs" />
+    <Compile Include="Mp\用户管理\UserJson\OpenIdResultJson.cs" />
+    <Compile Include="Mp\用户管理\UserJson\UserInfoJson.cs" />
+    <Compile Include="Mp\素材管理\Datas\GetMediaCountResultJson.cs" />
+    <Compile Include="Mp\素材管理\Datas\GetMediaListResultJson.cs" />
+    <Compile Include="Mp\素材管理\Datas\GetNewsResultJson.cs" />
+    <Compile Include="Mp\素材管理\Datas\NewsModel.cs" />
+    <Compile Include="Mp\素材管理\Datas\UpdateForeverNewsData.cs" />
+    <Compile Include="Mp\素材管理\Datas\UploadMediaFileResult.cs" />
+    <Compile Include="Mp\素材管理\MediaAPI.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageAPI.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\BaseGroupMessageDataByGroupId.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\BaseGroupMessageDataByOpenId.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\BaseGroupMessageDataPreview.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\GroupMessageType.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\SendResult.cs" />
+    <Compile Include="Mp\群发接口\GroupMessageJson\VideoMediaIdResult.cs" />
+    <Compile Include="Mp\群发接口\MessageApi.cs" />
+    <Compile Include="Mp\自定义菜单管理\CommonApi.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\BaseButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\ButtonGroup.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\GetMenuResult.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\GetMenuResultFull.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleClickButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleLocationSelectButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SinglePicPhotoOrAlbumButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SinglePicSysphotoButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SinglePicWeixinButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleScancodePushButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleScancodeWaitmsgButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SingleViewButton.cs" />
+    <Compile Include="Mp\自定义菜单管理\Datas\SubButton.cs" />
+    <Compile Include="Mp\身份验证接口\OAuthAPI.cs" />
+    <Compile Include="Mp\身份验证接口\OAuthJson\OAuthAccessTokenResult.cs" />
+    <Compile Include="Mp\身份验证接口\OAuthJson\OAuthUserInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qy\QyApi.cs" />
+    <Compile Include="Qy\企业号摇一摇周边\Datas\ShakeAroundResultJson.cs" />
+    <Compile Include="Qy\企业号摇一摇周边\ShakeAroundApi.cs" />
+    <Compile Include="Qy\企业号登录授权\Datas\GetLoginInfoResult.cs" />
+    <Compile Include="Qy\企业号登录授权\Datas\ProviderTokenResult.cs" />
+    <Compile Include="Qy\企业号登录授权\LoginAuthApi.cs" />
+    <Compile Include="Qy\发送消息\Datas\Article.cs" />
+    <Compile Include="Qy\发送消息\Datas\MassageResult.cs" />
+    <Compile Include="Qy\发送消息\MassageApi.cs" />
+    <Compile Include="Qy\异步处理\AsynchronousApi.cs" />
+    <Compile Include="Qy\异步处理\Datas\AsynchronousPostData.cs" />
+    <Compile Include="Qy\异步处理\Datas\AsynchronousResultJson.cs" />
+    <Compile Include="Qy\微信JS-SDK\JsApi.cs" />
+    <Compile Include="Qy\第三方应用授权\Datas\ThirdPartyAuthPostData.cs" />
+    <Compile Include="Qy\第三方应用授权\Datas\ThirdPartyAuthResult.cs" />
+    <Compile Include="Qy\第三方应用授权\ThirdPartyAuthApi.cs" />
+    <Compile Include="Qy\管理企业号应用\AppApi.cs" />
+    <Compile Include="Qy\管理企业号应用\Datas\GetAppInfoResult.cs" />
+    <Compile Include="Qy\管理企业号应用\Datas\GetAppListResult.cs" />
+    <Compile Include="Qy\管理企业号应用\Datas\SetAppPostData.cs" />
+    <Compile Include="Qy\管理素材文件\Datas\MediaResult.cs" />
+    <Compile Include="Qy\管理素材文件\Datas\UploadResultJson.cs" />
+    <Compile Include="Qy\管理素材文件\MediaApi.cs" />
+    <Compile Include="Qy\管理通讯录\Datas\DepartmentResult.cs" />
+    <Compile Include="Qy\管理通讯录\Datas\Member.cs" />
+    <Compile Include="Qy\管理通讯录\Datas\TagResult.cs" />
+    <Compile Include="Qy\管理通讯录\MailListApi.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\ButtonGroup.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleClickButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleLocationSelectButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SinglePicPhotoOrAlbumButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SinglePicSysphotoButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SinglePicWeixinButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleScancodePushButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleScancodeWaitmsgButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SingleViewButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\Buttons\SubButton.cs" />
+    <Compile Include="Qy\自定义菜单\Datas\MenuResult.cs" />
+    <Compile Include="Qy\自定义菜单\MenuApi.cs" />
+    <Compile Include="Qy\身份验证接口\Datas\ConvertToOpenIdResult.cs" />
+    <Compile Include="Qy\身份验证接口\Datas\ConvertToUserIdResult.cs" />
+    <Compile Include="Qy\身份验证接口\Datas\OAuth2Result.cs" />
+    <Compile Include="Qy\身份验证接口\OAuth2Api.cs" />
+    <Compile Include="Tencent\Cryptography.cs" />
+    <Compile Include="Tencent\WXBizMsgCrypt.cs" />
+    <Compile Include="WxCallbackApi.cs" />
+    <Compile Include="WxCorpApi.cs" />
+    <Compile Include="WxMpApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

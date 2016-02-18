@@ -1,0 +1,14 @@
+F:\个人项目\TG.Common\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.csprojResolveAssemblyReference.cache
+F:\个人项目\TG.Common\TG.Common.Weixin\bin\Debug\TG.Common.Weixin.dll
+F:\个人项目\TG.Common\TG.Common.Weixin\bin\Debug\TG.Common.Weixin.pdb
+F:\个人项目\TG.Common\TG.Common.Weixin\bin\Debug\Newtonsoft.Json.dll
+F:\个人项目\TG.Common\TG.Common.Weixin\bin\Debug\Newtonsoft.Json.xml
+F:\个人项目\TG.Common\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.dll
+F:\个人项目\TG.Common\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.pdb
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\bin\Debug\TG.Common.Weixin.dll
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\bin\Debug\TG.Common.Weixin.pdb
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\bin\Debug\Newtonsoft.Json.dll
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\bin\Debug\Newtonsoft.Json.xml
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.csprojResolveAssemblyReference.cache
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.dll
+F:\个人项目\TG.Common.Weixin\TG.Common.Weixin\obj\Debug\TG.Common.Weixin.pdb
